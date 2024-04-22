@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe || Contact</title>
+    <link
+      rel="stylesheet"
+      href="/fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <div id="1"></div>
+    <script>
+        load("/navbar.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+
+    <section class="section single-page">
+      <!-- section title -->
+      <div class="section-title">
+        <h1>contact</h1>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center page-info">
+        <!-- contact page-->
+        <p>
+          If you are looking to get ahold of me, you can send me an email at
+          <a href="mailto:email@email.com">@your_email</a>
+        </p>
+        <p>
+          You can also reach me on Twitter at
+          <a href="https://www.twitter.com">@your_social_media </a>
+        </p>
+      </div>
+    </section>
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+
+    <!-- footer -->
+   
+    <div id="4"></div>
+    <script>
+        load("/footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+    
+    <script src="/js/app.js"></script>
+  </body>
+</html>

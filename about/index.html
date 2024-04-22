@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe || About</title>
+    <link
+      rel="stylesheet"
+      href="/fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <div id="1"></div>
+    <script>
+        load("/navbar.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+
+    <section class="section single-page">
+      <!-- section title -->
+      <div class="section-title">
+        <h1>about me</h1>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center page-info">
+        <!-- about page -->
+        <p>
+          Hello, I am John Doe and I am a web developer. I live and work in
+          somewhere warm. I spend most of my day, experimenting with HTML, CSS
+          and JavaScript (and its endless list of frameworks). I enjoy coding
+          and the challenge of learning something new everyday. You can also
+          find me at youtube channel
+          <a href="https://www.youtube.com/channel/UCMZFwxv5l-XtKi693qMJptA"
+            >coding addict</a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+
+    <!-- footer -->
+   
+    <div id="4"></div>
+    <script>
+        load("/footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
